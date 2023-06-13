@@ -16,7 +16,7 @@ module.exports.createContact = async (event, context) => {
 
   const params = {
     Destination: {
-      ToAddress: [to]
+      ToAddresses: [to]
     },
     Message: {
       Body: {
