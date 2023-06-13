@@ -14,5 +14,10 @@ provider:
             - "*"
 
 functions:
-  function1:
-    handler: index.handler
+  create:
+    handler: handler.createContact
+    events:
+      - http:
+          path: /contact-us
+          method: post
+          cors: true
